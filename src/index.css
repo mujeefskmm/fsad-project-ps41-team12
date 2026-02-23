@@ -1,0 +1,341 @@
+/* ================= GLOBAL ================= */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+}
+
+/* ================= GLOBAL BUTTON STYLE ================= */
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #243b55;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #141e30;
+}
+
+.secondary-btn {
+  background: #ddd !important;
+  color: black !important;
+}
+
+.secondary-btn:hover {
+  background: #bbb !important;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00c6ff;
+}
+
+/* active page highlight */
+.nav-links a.active {
+  color: #00c6ff;
+  font-weight: 600;
+}
+
+/* ================= MAIN ================= */
+
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+/* ================= CARDS ================= */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* ================= FORM BOX ================= */
+
+.form-container {
+  background: white;
+  color: black;
+  width: 350px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input {
+  width: 100%;
+  margin: 10px 0 5px 0;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* ================= POPUP ================= */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  color: black;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+}
+
+.popup-content input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ================= ERROR ================= */
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin: 0 0 8px 0;
+  text-align: left;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ================= LINKS ================= */
+
+.form-link {
+  margin-top: 15px;
+}
+
+.form-link a {
+  color: #243b55;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ================= HOME HERO ================= */
+
+.home-hero {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* ===== LINE BY LINE TYPING ===== */
+
+.hero-text {
+  font-size: 20px;
+  color: #e0e0e0;
+  margin-bottom: 35px;
+}
+
+.hero-text .line {
+  display: block;
+  overflow: hidden;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  width: 0;
+}
+
+.line1 {
+  animation: typing 2.5s steps(40, end) forwards,
+             blink 0.8s 3,
+             hideCursor 0s forwards 6s;
+}
+
+.line2 {
+  animation: typing 3s steps(60, end) forwards 2.6s,
+             blink 0.8s 3 2.6s,
+             hideCursor 0s forwards 6s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+@keyframes hideCursor {
+  to { border-right: none; }
+}
+
+/* explore button */
+
+.explore-btn {
+  width: auto !important;
+  padding: 14px 35px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ================= ADMIN DASHBOARD ================= */
+
+.admin-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.admin-card {
+  background: white;
+  color: black;
+  padding: 30px;
+  border-radius: 14px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* ======================================= */
+/* ===== ANIMATED BACKGROUND BLOBS ======= */
+/* ======================================= */
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #00c6ff55, transparent 70%);
+  top: -100px;
+  left: -100px;
+  border-radius: 50%;
+  animation: floatBlob1 12s ease-in-out infinite;
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #0072ff55, transparent 70%);
+  bottom: -150px;
+  right: -150px;
+  border-radius: 50%;
+  animation: floatBlob2 15s ease-in-out infinite;
+}
+
+@keyframes floatBlob1 {
+  0% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(80px, 60px) scale(1.1); }
+  100% { transform: translate(0,0) scale(1); }
+}
+
+@keyframes floatBlob2 {
+  0% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(-60px, -80px) scale(1.15); }
+  100% { transform: translate(0,0) scale(1); }
+}
