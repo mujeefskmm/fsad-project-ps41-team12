@@ -339,3 +339,127 @@ button:hover {
   50% { transform: translate(-60px, -80px) scale(1.15); }
   100% { transform: translate(0,0) scale(1); }
 }
+/* ================================================= */
+/* ===== NEW MODERN HOME PAGE (ONLY HOME PAGE) ===== */
+/* ================================================= */
+
+.home-wrapper {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hero card container */
+.hero-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  padding: 50px;
+  border-radius: 18px;
+  text-align: center;
+  width: 70%;
+  max-width: 900px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* small top label */
+.tag {
+  background: rgba(255,255,255,0.08);
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* heading */
+.hero-card h1 {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.hero-card h1 span {
+  color: #00c6ff;
+}
+
+/* description */
+.hero-desc {
+  color: #d1d5db;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* buttons row */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.primary-btn {
+  width: auto !important;
+  padding: 12px 28px;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  width: auto !important;
+  padding: 12px 28px;
+  border-radius: 25px;
+  background: transparent !important;
+  border: 1px solid #00c6ff;
+  color: #00c6ff !important;
+}
+
+/* stats section */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.stats h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.stats p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+/* features section */
+.features {
+  display: flex;
+  gap: 25px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-box {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.08);
+}
